@@ -17,6 +17,6 @@ import { OtherComponent } from './other/other.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, OtherComponent]
 })
 export class AppModule { }
