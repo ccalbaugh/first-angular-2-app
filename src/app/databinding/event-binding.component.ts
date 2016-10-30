@@ -8,7 +8,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
   styles: []
 })
 export class EventBindingComponent {
-  @Output('clickable') clicked = new EventEmitter<string>();
+  @Output() clicked = new EventEmitter<string>();
   onClicked() {
     this.clicked.emit('It Works!');
   }
