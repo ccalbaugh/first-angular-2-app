@@ -15,7 +15,7 @@ import { Component } from '@angular/core';
   // The styles in this template will ONLY affect THIS component
 })
 export class AppComponent {
-  title = 'Is this working?';
+  title = 'Root Component';
 } //exporting turns this code into a module
 // making it available outside of this file
 // This is being exported to app.module and then
