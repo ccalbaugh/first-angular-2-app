@@ -8,7 +8,8 @@ import {
   AfterViewInit, 
   AfterViewChecked, 
   OnDestroy,
-  Input
+  Input,
+  ContentChild
 } from '@angular/core';
 
 @Component({
@@ -27,6 +28,9 @@ export class LifecycleComponent implements OnChanges, OnInit, DoCheck, AfterCont
   constructor() { }
 
   @Input() bindable = 1000;
+
+  @ContentChild('boundContent')
+  bountContent: HTMLElement;
 
   ngOnChanges() {
     this.log('ngOnChanges');
