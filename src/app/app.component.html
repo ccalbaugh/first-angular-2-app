@@ -3,4 +3,9 @@
 </h1>
 
 <!--<app-databinding></app-databinding>-->
-<app-lifecycle></app-lifecycle>
+<app-lifecycle *ngIf="!delete" [bindable]="boundValue">
+  <p>{{test}}</p>
+</app-lifecycle>
+<button (click)="delete = true">Click to Delete</button>
+<button (click)="test = 'Changed Value'">Click to Change Content</button>
+<button (click)="boundValue = 2000">Click to Change Binding</button>

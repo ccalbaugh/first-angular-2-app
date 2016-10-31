@@ -16,6 +16,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Root Component';
+  delete = false;
+  test = "Starting value";
+  boundValue = 1000;
 } //exporting turns this code into a module
 // making it available outside of this file
 // This is being exported to app.module and then
